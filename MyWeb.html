@@ -10,7 +10,7 @@
     <title>I am Curt</title>
 </head>
 <body>
-    <div id="header" style="z-index: 1;">
+    <div id="header" style="z-index: 2;">
         <div class="container"  >
             <p style="color: white; margin: 0px">Trường đại học Thủy Lợi-TLU</p>
             <p style="color: white; margin:0px 0px 0px 20px">(+)</p>
@@ -39,7 +39,16 @@
         <div class="nav-contain">
             <ul>
                 <li><a href="">TRANG CHỦ</a></li>
-                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="">GIỚI THIỆU</a>
+                    <div class="nav-contain-list">
+                        <ul>
+                            <li>Logo khoa CNTT</li>
+                            <li>Lời chào mừng</li>
+                            <li>Tổ chức</li>
+                            <li>Hợp tác liên kết</li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="">NGHIÊN CỨU KHOA HỌC</a></li>
                 <li><a href="">ĐÀO TẠO</a></li>
                 <li><a href="">BỘ MÔN-TRUNG TÂM</a></li>
@@ -53,25 +62,43 @@
     <div id="content">
         <div class="content-contain">
             <div class="content-contain1">
-                    <div id="next"><a href=""><img src="./MyImg/20.png" alt="" ></a></div>
-                    <div id="prev"><a href=""><img src="./MyImg/21.png" alt="" ></a></div>
                 <div class="slider">
-                    <a href=""><img src="./MyImg/4.jpg" alt="" stt="0" id="checked"></a>
-                    <a href="" class="checked"><img src="./MyImg/5.jpg" alt="" stt="1" style="display:none"></a>
-                    <a href="" class="checked"><img src="./MyImg/6.jpg" alt="" stt="2" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/7.jpg" alt="" stt="3" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/8.jpg" alt="" stt="4" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/9.jpg" alt="" stt="5" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/10.jpg" alt="" stt="6" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/11.jpg" alt="" stt="7" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/12.jpg" alt="" stt="8" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/13.jpg" alt="" stt="9" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/14.jpg" alt="" stt="10" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/15.jpg" alt="" stt="11" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/16.jpg" alt="" stt="12" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/17.jpg" alt="" stt="13" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/18.jpg" alt="" stt="14" style="display:none" ></a>
-                    <a href="" class="checked"><img src="./MyImg/19.jpg" alt="" stt="15" style="display:none" ></a>
+                    <a href="" class="checked fade" style="display:block"><img src="./MyImg/4.jpg" alt="" stt="0" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/5.jpg" alt="" stt="1" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/6.jpg" alt="" stt="2" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/7.jpg" alt="" stt="3" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/8.jpg" alt="" stt="4" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/9.jpg" alt="" stt="5" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/10.jpg" alt="" stt="6" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/11.jpg" alt="" stt="7" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/12.jpg" alt="" stt="8"  ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/13.jpg" alt="" stt="9"  ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/14.jpg" alt="" stt="10" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/15.jpg" alt="" stt="11" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/16.jpg" alt="" stt="12" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/17.jpg" alt="" stt="13" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/18.jpg" alt="" stt="14" ></a>
+                    <a href="" class="checked fade"><img src="./MyImg/19.jpg" alt="" stt="15" ></a>
+                    <a id="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot active" onclick="currentSlide(1)"></span> 
+                    <span class="dot " onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                    <span class="dot" onclick="currentSlide(9)"></span> 
+                    <span class="dot" onclick="currentSlide(10)"></span> 
+                    <span class="dot" onclick="currentSlide(11)"></span> 
+                    <span class="dot" onclick="currentSlide(12)"></span> 
+                    <span class="dot" onclick="currentSlide(13)"></span> 
+                    <span class="dot" onclick="currentSlide(14)"></span> 
+                    <span class="dot" onclick="currentSlide(15)"></span>
+                    <span class="dot" onclick="currentSlide(16)"></span>   
                 </div>
                 <div class="introduction">
 
