@@ -71,11 +71,37 @@ body{
     padding: 0px 10px;
     border-left: 1px dotted #808080;
     font-size: 10px;
+    position: relative;
 }
 .nav-contain ul li a{
     text-decoration: none;
     color: black;
     line-height: 30px;
+    display: block;
+}
+.nav-contain li:hover{
+    background-color: blue;
+    transition: 0.6s ease;
+}
+.nav-contain li a:hover{
+    color: white;
+}
+.nav-contain-list{
+    position: absolute;
+    left: 0px;
+    margin-top: 10px;
+    height: 150px;
+    width: 130px;
+    background-color: blue;
+    z-index: 1;
+}
+.nav-contain-list ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.nav-contain-list ul li{
+    padding: 10px 5px 10px 5px;
 }
 /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 #content{
@@ -93,7 +119,6 @@ body{
     grid-template-areas: "content-contain1 content-contain2" 
 }
 .content-contain1{
-    background-color: red;
     display: grid;
     grid-template-rows: 300px 600px;
     grid-template-areas: "slider""introduction";
@@ -107,28 +132,55 @@ body{
     height: 100%;
     width: 100%;
 }
+#next, #prev{
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.6s ease;
+}
 #next{
-    width: 30px; 
-    height:30px; 
-    position: absolute;
-    top: 150px;
-    right: 20px;
+    right: 0px;
+    border-radius: 3px 0 0 3px;
 }
-#next img{
-    height: 100%;
-    width: 100%;
+#prev:hover, #next:hover{
+    background-color: rgba(0,0,0,0.8);
 }
-#prev{
-    width: 30px; 
-    height:30px; 
-    position: absolute;
-    top: 150px;
-    left: 20px;
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
-#prev img{
-    height: 100%;
-    width: 100%;
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
+.checked{
+    display: none;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+  }  
 .introduction{
 
 }
