@@ -1,0 +1,136 @@
+body{
+    margin: 0px auto;
+}
+#header{
+    height: 30px;
+    background-color: #003478;
+    line-height: 30px;
+    position: fixed;
+    width: 100%;
+
+}
+.container{
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+}
+.contain-img{
+    height: 15px;
+    width: 20px;
+}
+.contain-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 2px;
+}
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+#title-img{
+    height: 110px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+.contain-title-img{
+    width: 60%;
+    height: 100%;
+    margin-left: 200px
+}
+.contain-title-img img{
+    height: 100%;
+    width: 100%;
+}
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+#nav{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    border-bottom: #003478 solid 1px;
+}
+.nav-contain{
+    width: 75%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    
+}
+.nav-contain ul{
+    list-style-type: none;
+    display: flex;
+    height: 30px;
+    margin: 0x;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.nav-contain ul li{
+    height: 30px;
+    font-weight: 850;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px 10px;
+    border-left: 1px dotted #808080;
+    font-size: 10px;
+}
+.nav-contain ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+}
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+#content{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: 100px;
+}
+.content-contain{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 700px 300px;
+    grid-template-areas: "content-contain1 content-contain2" 
+}
+.content-contain1{
+    background-color: red;
+    display: grid;
+    grid-template-rows: 300px 600px;
+    grid-template-areas: "slider""introduction";
+}
+.slider{
+    height: 300px;
+    width: 700px;
+    position: relative;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+}
+#next{
+    width: 30px; 
+    height:30px; 
+    position: absolute;
+    top: 150px;
+    right: 20px;
+}
+#next img{
+    height: 100%;
+    width: 100%;
+}
+#prev{
+    width: 30px; 
+    height:30px; 
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+#prev img{
+    height: 100%;
+    width: 100%;
+}
+.introduction{
+
+}
+.content-contain2{
+}
