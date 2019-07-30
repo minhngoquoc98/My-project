@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./MyCSS/MyCSS.css">
     <script src="./MyJS/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="./MyJS/Slider.js" type="text/javascript"></script>
+    <script src="./MyJS/XuLyLoginForm.js" type="text/javascript"></script>
     <title>I am Curt</title>
 </head>
 <body>
@@ -15,9 +16,82 @@
             <p style="color: white; margin: 0px">Trường đại học Thủy Lợi-TLU</p>
             <p style="color: white; margin:0px 0px 0px 20px">(+)</p>
             <p style="color: white; margin:0px 0px 0px 20px;font-weight: bold">|</p>
-            <p style="color: white; margin:0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif">Login</p>
+            <p style=" margin:0px 0px 0px 20px;font-family: Arial, Helvetica, sans-serif">
+                <a style="text-decoration: none; color: white; cursor: pointer;" onclick="document.getElementById('LoginForm').style.display='block'">Login</a>
+            </p>
+            <div class="loginForm" id="LoginForm">
+                <Form class="loginForm-content animate">
+                    <div class="loginForm-contain-title"><p class="loginForm-title">login here</p></div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="text" placeholder="Username" class="loginForm-input">
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="password" placeholder="Password" class="loginForm-input">
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="checkbox" checked="checked" name="remember" id="check">
+                            <label style="color: white; cursor: pointer;" for="check">Remember me</label>
+                            <span style="color: white; display: inline-block; float: right;">Forgot <a href="#" style="color: red">password?</a></span>
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <button type="submit">LOGIN</button>
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <div style="color: white; text-align:center; font-style: italic; padding: 35px">I am Curt</div>
+                        </div>
+                    </div>
+                </Form>
+            </div>
             <p style="color: white; margin:0px 0px 0px 20px;font-weight: bold">|</p>
-            <p style="color: white; margin:0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif">Register</p>
+            <p style="color: white; margin:0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif">
+                <a style="text-decoration: none; color: white; cursor: pointer;" onclick="document.getElementById('RegisterForm').style.display='block'">Register</a>
+            </p>
+            <div class="loginForm" id="RegisterForm">
+                <Form class="loginForm-content animate">
+                    <div class="loginForm-contain-title"><p class="loginForm-title">Register here</p></div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="text" placeholder="Username" class="loginForm-input">
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="password" placeholder="Password" class="loginForm-input">
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="text" placeholder="Confirm Password" class="loginForm-input">
+                        </div>
+                    </div>
+                    <div class="loginForm-container-input">
+                        <div class="loginForm-contain-input">
+                            <input type="text" placeholder="Email Address" class="loginForm-input">
+                        </div>
+                    </div>
+                    <div style="display: flex; width: 400px; padding: 0px 55px;">
+                        <div class="loginForm-container-register" style="padding-right:50px;">
+                            <div class="loginForm-contain-register">
+                                <button type="submit">REGISTER</button>
+                            </div>
+                        </div>
+                        <div class="loginForm-container-register">
+                            <div class="loginForm-contain-register">
+                                <button type="submit">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                </Form>
+            </div>
             <p style="color: white; margin:0px 0px 0px 20px;font-weight: bold">|</p> 
             <p style="color: white; margin:0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif">Ngôn ngữ:</p>
             <div class="contain-img">
@@ -29,10 +103,12 @@
         </div>
     </div>
     <div id="title-img" style="z-index: -1;">
-        <div class="contain-title-img" >
-            <a href="" >
-                <img src="./MyImg/3.jpg" alt="" style="" >
-            </a>
+        <div class="container-title-img">
+            <div class="contain-title-img" >
+                <a href="" >
+                    <img src="./MyImg/3.jpg" alt="" style="" >
+                </a>
+            </div>
         </div>
     </div>
     <div id="nav">
@@ -204,7 +280,7 @@
                     <a id="next" onclick="plusSlides(1)">&#10095;</a>
                     <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
                 </div>
-                <div style="text-align:center">
+                <div style="text-align:center;" class="dot-contain">
                     <span class="dot active" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span>
@@ -223,7 +299,57 @@
                     <span class="dot" onclick="currentSlide(16)"></span>   
                 </div>
                 <div class="introduction">
-
+                    <div class="introduction-container">
+                        <div class="introduction-contain-img">
+                            <img src="./MyImg/20.jpg" alt="">
+                            <div class="middle">
+                                <div class="middle-text">Welcome</div>
+                            </div>
+                        </div>
+                        <div class="introduction-contain-text">Welcome</div>
+                        <br><br>
+                        <div class="introduction-contain-img">
+                            <img src="./MyImg/21.jpg" alt="">
+                            <div class="middle">
+                                <div class="middle-text">Nghiên cứu khoa học</div>
+                            </div>
+                        </div>
+                        <div class="introduction-contain-text">Nghiên cứu khoa học</div>
+                    </div>
+                    <div class="introduction-container">
+                        <div class="introduction-contain-img">
+                            <img src="./MyImg/22.jpg" alt="">
+                            <div class="middle">
+                                <div class="middle-text">LECTURERS</div>
+                            </div>
+                        </div>
+                        <div class="introduction-contain-text">Giảng viên</div>
+                        <br><br>    
+                        <div class="introduction-contain-img">
+                            <img src="./MyImg/24.jpg" alt="">
+                            <div class="middle">
+                                <div class="middle-text">Educate</div>
+                            </div>
+                        </div>
+                        <div class="introduction-contain-text">Đào tạo</div>
+                    </div>
+                    <div class="introduction-container">
+                        <div class="introduction-contain-img">
+                            <img src="./MyImg/25.jpg" alt="">
+                            <div class="middle">
+                                <div class="middle-text">Photos</div>
+                            </div>
+                        </div>
+                        <div class="introduction-contain-text">Ảnh khoa</div>
+                        <br><br>    
+                        <div class="introduction-contain-img">
+                            <img src="./MyImg/23.jpg" alt="">
+                            <div class="middle">
+                                <div class="middle-text">Photos</div>
+                            </div>
+                        </div>
+                        <div class="introduction-contain-text">Ảnh trường</div>
+                    </div>
                 </div>
             </div>
             <div class="content-contain2" style="float: right">
@@ -231,5 +357,17 @@
             </div>
         </div>
     </div>
+    <script>
+        var modal = document.getElementById('LoginForm');
+        var modal2 = document.getElementById("RegisterForm");
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if(event.target == modal2){
+                modal2.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
