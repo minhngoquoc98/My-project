@@ -1,0 +1,73 @@
+body{
+    margin: 0px auto;
+}
+#fanpage{
+    height: 214px;
+    width: 285px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "above" "below";
+}
+.above{
+    background-size: 100%;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "above-title""above-contact";
+}
+.above-title{
+    display: flex;
+}
+.above-title-contain{
+    height: 24px;
+    width: 70%;
+    margin-top: 10px;
+    max-width: 213px;;
+    text-overflow: ellipsis;
+}
+.above-title a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-overflow: ellipsis;    
+    display: inline-block;
+    overflow: hidden;
+}
+.above-title img{
+    height: 50px;
+    width: 50px;
+    border: solid white 1px;
+    margin: 10px;
+}
+.above-contact{
+
+}
+.above-contact-contain{
+    height: 20px;
+    width: 80px;
+    background-color: white;
+    margin: 10px 10px;
+    display: flex
+}
+.above-contact-contain a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    display: inline-block;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.above-contact-contain-image{
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    margin: 3px 5px 3px 5px;
+}
+.above-contact-contain-image img{
+    height: 100%;
+    width: 100%;
+}
+.below{
+
+}
