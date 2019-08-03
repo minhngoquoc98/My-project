@@ -319,7 +319,6 @@ body{
 .loginForm-contain-register{
     height: 34px;
     width: 180px;
-    padding: 
     margin: auto;
 }
 /* Chrome, Opera, Safari */
@@ -375,3 +374,74 @@ button:hover{
     to {transform: scale(1)}
   }
 /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+#footer{
+    width: 100%;
+    height: 300px;
+    background-color: #003478;
+}
+.footer-container{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 225px 75px;
+    grid-template-areas: "footer-above""footer-below";
+}
+.footer-above{
+    height: 225px;
+    width: 1000px; 
+    display: flex;   
+}
+.footer-above-content{
+    width: 250px;
+    height: 225px;
+    padding: 30px 10px 5px 5px;
+}
+.footer-above-content ul{
+    border-right: 1px dashed white;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.footer-above-content ul li{
+    padding-bottom: 10px;
+}
+.footer-above-content ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footer-above-content ul li a:hover{
+    color: orangered;
+    transition: 1s ease;
+}
+.footer-below{
+    width: 1000px;
+    height: 75px;
+    display: flex;
+}
+.footer-below img{
+    height: 72px;
+    width: 150px;
+    padding-right: 20px;
+}
+.footer-below-title{
+    width: 850px;
+    height: 75px;
+}
+.footer-below-title p{
+    margin: 15px 0px 0px 0px;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-below-title p a{
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.footer-below p a:hover{
+    color: orangered;
+    transition: 1s ease;
+}
