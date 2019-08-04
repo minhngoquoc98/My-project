@@ -1,7 +1,7 @@
 <div class="nav-contain">
             <ul>
-                <li><a href="">TRANG CHỦ</a></li>
-                <li><a href="">GIỚI THIỆU</a>
+                <li><a href="index.php">TRANG CHỦ</a></li>
+                <li><a href="index.php?page=1">GIỚI THIỆU</a>
                     <div class="nav-contain-list">
                         <ul>
                             <li>
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="">ĐÀO TẠO</a>
+                <li><a href="index.php?page=3">ĐÀO TẠO</a>
                     <div class="nav-contain-list" style="width: 170px; height: 180px; ">
                         <ul>
                             <li>

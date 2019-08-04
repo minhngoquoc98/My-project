@@ -1,6 +1,8 @@
 
 <div class="container"  >
-            <p style="color: white; margin: 0px">Trường đại học Thủy Lợi-TLU</p>
+            <div class="container-title-wru">
+                <a href="index.php"><p >Trường đại học Thủy Lợi-TLU</p></a>
+            </div>
             <p style="color: white; margin:0px 0px 0px 20px">(+)</p>
             <p style="color: white; margin:0px 0px 0px 20px;font-weight: bold">|</p>
 

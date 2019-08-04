@@ -46,10 +46,12 @@
                 <div class="introduction">
                     <div class="introduction-container">
                         <div class="introduction-contain-img">
-                            <img src="./images/20.jpg" alt="">
-                            <div class="middle">
-                                <div class="middle-text">Welcome</div>
-                            </div>
+                            <a href="index.php?page=1">
+                                <img src="./images/20.jpg" alt="">
+                                <div class="middle">
+                                    <div class="middle-text">Welcome</div>
+                                </div> 
+                            </a>
                         </div>
                         <div class="introduction-contain-text">Welcome</div>
                         <br><br>
@@ -63,27 +65,33 @@
                     </div>
                     <div class="introduction-container">
                         <div class="introduction-contain-img">
-                            <img src="./images/22.jpg" alt="">
-                            <div class="middle">
-                                <div class="middle-text">LECTURERS</div>
-                            </div>
+                            <a href="index.php?page=2">
+                                <img src="./images/22.jpg" alt="">
+                                <div class="middle">
+                                    <div class="middle-text">LECTURERS</div>
+                                </div>
+                            </a>
                         </div>
                         <div class="introduction-contain-text">Giảng viên</div>
                         <br><br>    
                         <div class="introduction-contain-img">
-                            <img src="./images/24.jpg" alt="">
-                            <div class="middle">
-                                <div class="middle-text">Educate</div>
-                            </div>
+                            <a href="index.php?page=3">
+                                <img src="./images/24.jpg" alt="">
+                                <div class="middle">
+                                    <div class="middle-text">Educate</div>
+                                </div>
+                            </a>                                
                         </div>
                         <div class="introduction-contain-text">Đào tạo</div>
                     </div>
                     <div class="introduction-container">
                         <div class="introduction-contain-img">
                             <img src="./images/25.jpg" alt="">
-                            <div class="middle">
-                                <div class="middle-text">Photos</div>
-                            </div>
+                            <a href="https://www.facebook.com/pg/cse.tlu.edu.vn/photos/?ref=page_internal" target = "blank">
+                                <div class="middle">
+                                    <div class="middle-text">Photos</div>
+                                </div>
+                            </a>
                         </div>
                         <div class="introduction-contain-text">Ảnh khoa</div>
                         <br><br>    

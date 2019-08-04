@@ -15,6 +15,19 @@ body{
     margin: auto;
     display: flex;
 }
+.container-title-wru{
+}
+.container-title-wru a{
+    text-decoration: none;
+}
+.container-title-wru a p{
+    color: white; 
+    margin: 0px;
+}
+.container-title-wru a p:hover{
+    transition: 1s ease;
+    color: red;
+}
 .contain-img{
     height: 15px;
     width: 20px;
@@ -259,8 +272,10 @@ body{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: #003478;
+    padding-top: 10px;
 }
 .content-contain2{
+    margin-left: 20px;
 }
 /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 .loginForm{

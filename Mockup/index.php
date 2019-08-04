@@ -30,12 +30,31 @@
 <!--------------------------------------------------navigation bar------------------------------------------------>
     <div id="nav">
         <?php 
-            include ('nav.php')
+                include ('nav.php');
         ?>
     </div>
 <!--------------------------------------------------Main-content--------------------------------------------------->
         <?php 
-            include('content.php')
+            if(isset($_GET["page"])==true){
+                $page = $_GET["page"];
+            }else{
+                $page = 0;
+            }
+            if($page!=1 && $page!=2 && $page != 3 && $page != 4){
+                include('content.php');
+            }
+            if($page==1){
+                include('detail-welcome.php');
+            }
+            else if($page==2){
+                include('detail-lecturers.php');
+            }
+            else if($page==3){
+                include('detail-educate-page1.php');
+            }
+            else if($page==4){
+                include('detail-educate-page2.php');
+            }
         ?>
 
     <br><br><br><br>
