@@ -107,6 +107,9 @@ body{
 .nav-contain li a:hover{
     color: white;
 }
+.nav-contain li:hover a{
+    color: white;
+}
 .nav-contain li:hover .nav-contain-list{
     display: block;
 }
@@ -461,3 +464,141 @@ button:hover{
     color: orangered;
     transition: 1s ease;
 }
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+#contact{
+    width: 245px;
+    height: 80px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1;
+    transition: 2s ease;
+}
+#contact:hover .contact-logo{
+    font-size: 45px;
+}
+#contact:hover .contact-title{
+    font-size: 23px;
+}
+#contact:hover {
+    width: 280px;
+}
+.contact-logo-contain{
+    height: 80px;
+    width: 60px;
+    float: right;
+    margin: 0px;
+}
+.contact-logo{
+    font-size: 40px;
+    line-height: 80px;
+    float: right;
+    margin: 0px;
+}
+.contact-logo a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.contact-title {
+ 
+    background-color: #004A7F;
+   
+    -webkit-border-radius: 10px;
+   
+    border-radius: 10px;
+     
+    border: none;
+     
+    color: #FFFFFF;
+     
+    cursor: pointer;
+     
+    display: inline-block;
+     
+    font-family: Arial;
+     
+    font-size: 20px;
+     
+    padding: 5px 10px;
+     
+    text-align: center;
+     
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+  }
+  @-webkit-keyframes glowing {
+    0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @-moz-keyframes glowing {
+    0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @-o-keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  .contact-title {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+  .contact-logo a {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+/*/----------------------------------Iframe contact-------------------------------------------*/
+  #contact-iframe-contain{
+    width:360px; 
+    height: 420px;
+    margin-right: 20px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 2;
+    display: none;
+  }
+  .contact-iframe{
+    width:360px; 
+    height: 410px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px 0px;
+  }
+  .contact-iframe-x-contain{
+    height: 20px;
+    width: 20px;
+    background-color: #003478;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    border-radius: 5px;
+  }
+  .contact-iframe-x-contain a{
+      line-height: 20px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      width: 20px;
+  }
+  .contact-iframe-x-contain a:hover{
+      color: red;
+  }

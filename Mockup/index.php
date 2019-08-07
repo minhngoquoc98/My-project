@@ -9,6 +9,7 @@
     <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="./js/Slider.js" type="text/javascript"></script>
     <script src="./js/XuLyLoginForm.js" type="text/javascript"></script>
+    <script src="./js/fontawesome.js" type="text/javascript"></script>
     <title>I am Curt</title>
 </head>
 <body>
@@ -33,6 +34,10 @@
                 include ('nav.php');
         ?>
     </div>
+<!--------------------------------------------------contact-------------------------------------------------------->
+    <?php 
+        include('contact.php');
+    ?>
 <!--------------------------------------------------Main-content--------------------------------------------------->
         <?php 
             if(isset($_GET["page"])==true){

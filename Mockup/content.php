@@ -108,7 +108,7 @@
 
             <!--------------------------------------------------link facebook------------------------------------------------>
             <div class="content-contain2" style="float: right">
-                <iframe src="./iframe/iframe.html" frameborder="0" height="214px" width="285px"></iframe>
+                <iframe src="https://www.facebook.com/v2.9/plugins/page.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df6a3f5b9e5c198%26domain%3Dcse.tlu.edu.vn%26origin%3Dhttp%253A%252F%252Fcse.tlu.edu.vn%252Ff113a5fea6ab0f8%26relation%3Dparent.parent&container_width=0&href=https%3A%2F%2Fwww.facebook.com%2Fcse.tlu.edu.vn%2F%3Ffref%3Dts&locale=en_US&sdk=joey&width=285" frameborder="0" height="214px" width="285px"></iframe>
             </div>
         </div>
 </div>
